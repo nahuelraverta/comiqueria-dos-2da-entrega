@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from "react-router-dom";
+
 export const ProductoItem = ({
   id,
   title,
@@ -7,8 +9,6 @@ export const ProductoItem = ({
   category,
   description
 }) => {
-
-
 
   
   return (
@@ -31,7 +31,7 @@ export const ProductoItem = ({
           <button className="btn">Añadir al carrito
           </button>
           <div>
-            <a href="#" className="btn">Vista</a>
+          <Link to={`/producto/${id}`} className="btn">Detalles</Link>
           </div>
 
         </div>

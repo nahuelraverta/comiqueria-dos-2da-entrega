@@ -5,6 +5,7 @@ import { Header } from "./componentes/Header";
 import { Inicio } from "./componentes/Inicio";
 import { ProductoLista } from "./componentes/Productos";
 import { DataProvider } from "./context/Dataprovider";
+import { ProductoDetalles } from "./componentes/Productos/ProductoDetalles";
 
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
                   <Header />
                   <Routes>
                       <Route path='/' element={<Inicio />} />
-                      <Route path='/Productos' element={<ProductoLista />} />
+                      <Route path='/Productos' element={<ProductoLista />}/>
+                      <Route path="/producto/:id" element={<ProductoDetalles />}/>
                   </Routes>
               </div>
           </DataProvider>
