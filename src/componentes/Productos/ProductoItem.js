@@ -4,7 +4,8 @@ export const ProductoItem = ({
   title,
   price,
   image,
-  category
+  category,
+  description
 }) => {
 
 
@@ -13,7 +14,7 @@ export const ProductoItem = ({
   return (
     <div>
       <div className='producto'>
-        <a href='#'>
+        <a href=''>
           <div className='producto__img'>
             <img src={image} alt={title} />
           </div>
@@ -24,6 +25,7 @@ export const ProductoItem = ({
           <h1> {title}</h1>
           <p>{category}</p>
           <p className="price">$ {price}  </p>
+          <p className="description"> {description} </p>
         </div>
         <div className="buttom">
           <button className="btn">Añadir al carrito

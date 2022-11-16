@@ -1,5 +1,4 @@
 import React from 'react'
-import Portada from "../../images/inicio.jpg";
 import { Link } from "react-router-dom";
 
 export const Inicio = () => {
@@ -9,7 +8,7 @@ export const Inicio = () => {
         <h1>Inicio</h1></Link>
         <Link to="/Productos">
         <h1>Productos</h1></Link>
-        <img src={Portada} alt='Inicio'/>
+        <img src="https://th.bing.com/th/id/R.5a76e9f297514f80428ab4a5748a1815?rik=JlqK1g43YW3Mmg&pid=ImgRaw&r=0" alt='Inicio'/>
         </div>
   )
 }

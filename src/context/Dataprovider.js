@@ -7,8 +7,13 @@ export const DataProvider = (props) => {
     const [productos, setProductos] = useState([])
 
     useEffect(() => {
-        const producto = Data
-        setProductos(producto)
+        const producto = Data.items
+        if (producto) {
+            setProductos(producto)
+        }
+        else{
+            setProductos([])
+        }
 
     }, [])
 
@@ -18,7 +23,7 @@ export const DataProvider = (props) => {
     }
 
     return (
-        <DataContext.Provider value= {value}>
+        <DataContext.Provider value = {value}>
             {props.children}
         </DataContext.Provider>
     )
